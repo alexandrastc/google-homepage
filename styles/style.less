@@ -11,10 +11,11 @@ body{
 #logo{
 	
 	display: block;
-	margin: 20% auto;
+	margin: 15.5% auto;
 
 }
 
+//function for shadows 
 .box-shadow(@x: 0, @y: 0, @blur: 3px, @color: rgba(0,0,0,0.35)) {
 
 	box-shadow: @arguments;
@@ -23,12 +24,21 @@ body{
 
 }
 
+//disable browser default appearance
+.disable-default(){
+	
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+}
+
 input[type=text]{
 
 	font-size: 1.5em;	
 	display: block;
-	margin: -19% auto;
-	width: 40%;
+	margin: -13.5% auto;
+	width: 43%;
 	line-height: 24px;
 	padding: 10px 10px 10px 10px;
 	color: #000;
@@ -42,5 +52,43 @@ input[type=text]:hover, input[type=text]:focus{
 
 	outline: none;
 	.box-shadow(2px, 2px, 7px);
+
+}
+
+div#buttons{
+
+	//defined flex container and centered items
+	justify-content: center;
+	align-items: center;
+	display:flex;
+
+}
+
+input[type=submit]{
+
+	.disable-default();
+	padding: 5px 14px 5px 14px;
+	margin-top: 16%;
+	margin-right: 8px;
+	align-self: center;
+	font-size: 1em;
+	height: 36px;
+	line-height: 27px;
+	background-color: #f2f2f2;
+	color: #757575;
+	border: none;
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	border: 1px solid #f2f2f2;
+	border-radius: 3px;
+	text-align: center;
+
+}
+
+input[type=submit]:hover, input[type=submit]:focus{
+	
+	color: #000;
+	border: 1px solid rgba(117, 117, 117, 0.4);
+	.box-shadow(1px, 1px, 1px, rgba(0,0,0,0.1));
 
 }
