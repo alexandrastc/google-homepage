@@ -5,13 +5,13 @@ body {
 }
 #logo {
   display: block;
-  margin: 20% auto;
+  margin: 15.5% auto;
 }
 input[type=text] {
   font-size: 1.5em;
   display: block;
-  margin: -19% auto;
-  width: 40%;
+  margin: -13.5% auto;
+  width: 43%;
   line-height: 24px;
   padding: 10px 10px 10px 10px;
   color: #000;
@@ -26,4 +26,37 @@ input[type=text]:focus {
   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.35);
   -moz-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.35);
+}
+div#buttons {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 5px 14px 5px 14px;
+  margin-top: 16%;
+  margin-right: 8px;
+  align-self: center;
+  font-size: 1em;
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  color: #757575;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border: 1px solid #f2f2f2;
+  border-radius: 3px;
+  text-align: center;
+}
+input[type=submit]:hover,
+input[type=submit]:focus {
+  color: #000;
+  border: 1px solid rgba(117, 117, 117, 0.4);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
