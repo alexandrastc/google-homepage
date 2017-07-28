@@ -3,6 +3,8 @@
 body{
 	
 	background-color: @background-color;
+	font-size: 13px;
+	line-height: 24px;
 
 }
 
@@ -10,5 +12,35 @@ body{
 	
 	display: block;
 	margin: 20% auto;
+
+}
+
+.box-shadow(@x: 0, @y: 0, @blur: 3px, @color: rgba(0,0,0,0.35)) {
+
+	box-shadow: @arguments;
+  	-moz-box-shadow: @arguments;
+  	-webkit-box-shadow: @arguments;
+
+}
+
+input[type=text]{
+
+	font-size: 1.5em;	
+	display: block;
+	margin: -19% auto;
+	width: 40%;
+	line-height: 24px;
+	padding: 10px 10px 10px 10px;
+	color: #000;
+	border: none;
+
+	.box-shadow(1px, 1px);
+
+}
+
+input[type=text]:hover, input[type=text]:focus{
+
+	outline: none;
+	.box-shadow(2px, 2px, 7px);
 
 }
