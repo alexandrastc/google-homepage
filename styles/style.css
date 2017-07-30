@@ -2,11 +2,15 @@ body {
   background-color: #fff;
   font-size: 13px;
   line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 97vh;
 }
 #logo {
   display: block;
-  margin: 15.5% auto;
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
 }
 input[type=text] {
   font-size: 1.5em;
@@ -73,4 +77,23 @@ p a {
 }
 p a:hover {
   text-decoration: underline;
+}
+#footer {
+  display: inline-flex;
+  background-color: rgba(170, 170, 170, 0.2);
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  line-height: 40px;
+  border-top: 1px solid rgba(34, 34, 34, 0.1);
+  margin-top: auto;
+}
+#footer a {
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.8);
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+#right {
+  margin-left: auto;
 }

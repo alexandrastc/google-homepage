@@ -1,22 +1,24 @@
 @background-color: #fff;
-
 body{
-	
+
 	background-color: @background-color;
 	font-size: 13px;
 	line-height: 24px;
-
+	display: flex;
+	flex-direction: column;
+	min-height: 97vh;
 }
 
 #logo{
-	
-	display: block;
-	margin: 15.5% auto;
-	margin-bottom: 30px;
 
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	
 }
 
-//function for shadows 
+//function for shadows
 .box-shadow(@x: 0, @y: 0, @blur: 3px, @color: rgba(0,0,0,0.35)) {
 
 	box-shadow: @arguments;
@@ -27,7 +29,7 @@ body{
 
 //disable browser default appearance
 .disable-default(){
-	
+
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -36,7 +38,7 @@ body{
 
 input[type=text]{
 
-	font-size: 1.5em;	
+	font-size: 1.5em;
 	display: block;
 	margin: 0 auto;
 	margin-top: 20px;
@@ -60,7 +62,7 @@ input[type=text]:hover, input[type=text]:focus{
 
 div#buttons{
 
-	//defined flex container and centered items 
+	//defined flex container and centered items
 	position: relative;
 	justify-content: center;
 	align-items: center;
@@ -90,7 +92,7 @@ input[type=submit]{
 }
 
 input[type=submit]:hover, input[type=submit]:focus{
-	
+
 	color: #000;
 	border: 1px solid rgba(117, 117, 117, 0.4);
 	.box-shadow(1px, 1px, 1px, rgba(0,0,0,0.1));
@@ -110,4 +112,29 @@ p{
 		text-decoration: underline;
 	}
 
+}
+
+#footer{
+
+	display: inline-flex;
+	background-color: rgba(170,170,170, 0.2);
+	font-family: Arial, sans-serif;
+	justify-content: space-between;
+	line-height: 40px;
+	border-top: 1px solid rgba(34, 34, 34, 0.1);
+
+	a{
+		text-decoration: none;
+		color: rgba(34, 34, 34, 0.8);
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+	margin-top: auto;
+
+}
+
+#right{
+	margin-left: auto;
 }
