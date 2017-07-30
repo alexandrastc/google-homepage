@@ -97,3 +97,16 @@ p a:hover {
 #right {
   margin-left: auto;
 }
+#header {
+  display: inline-flex;
+  justify-content: flex-end;
+  font-family: Arial, sans-serif;
+}
+#header a {
+  color: #222;
+  margin-right: 5px;
+  text-decoration: none;
+}
+#header a:hover {
+  text-decoration: underline;
+}
